@@ -4,39 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna's Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Download poster</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+                <p>Download poster</p>
+                <p>Contact</p>
     </header>
 
     <section id="home">
         <div class="intro">
-            <h1>Anna González Solano Portfolio Fest</h1>
-            <p>It's do o clock</p>
+            <h1>
+                <span>Anna González Solano</span>
+                <span>Portfolio Fest</span>
+            </h1>
+            <p style="font-family: 'Reenie Beanie', cursive; font-size: 3.5rem; margin-top: -1rem">It's do o'clock</p>
             <h3>Barcelona · 12 October 1996 · Free access</h3>
         </div>
 
         <div class="main-artists">
-            <h3>Cabeza de cartel</h3>
-            <h2>Creativity · Energy · Enthusiasm</h2>
+            <h3>Headliner</h3>
+            <h2>Full-Stack Web Development · Graphic Design · UX/UI · Advertising background</h2>
         </div>
 
         <div class="other-artists">
-            <h3>Otros artistas</h3>
-            <p>Training in Advertising and Public Relations</p>
+            <h3>Other artists</h3>
+            <p>Design of Packaging and Visual Identity Master's Degree</p>
+            <p>Advertising and Public Relations Bachelor's Degree</p>
             <p>Over 4 years of experience working in MM</p>
         </div>
 
         <div class="partners">
             <h3>Strategic partners (technologies)</h3>
-            <p>JavaScript · HTML · CSS · React · MongoDB · Adobe Photoshop · Adobe Illustrator</p>
+            <div class="image-container">
+                <div class="image-row">
+                    <img src="images/js-logo.png" alt="JavaScript">
+                    <img src="images/node-logo.png" alt="Node js">
+                    <img src="images/express-logo.png" alt="Express js">
+                    <img src="images/html-logo.png" alt="HTML">
+                    <img src="images/css-logo.png" alt="CSS">
+                    <img src="images/tailwind-logo.png" alt="Tailwind">
+                    <img src="images/react-logo.png" alt="React">
+                    <img src="images/mongodb-logo.png" alt="MongoDB">
+                    <img src="images/git-logo.png" alt="git">
+                    <img src="images/photoshop-logo.png" alt="Adobe Photoshop">
+                    <img src="images/illustrator-logo.png" alt="Adobe Illustrator">
+                    <img src="images/figma-logo.png" alt="Figma">
+                    <img src="images/js-logo.png" alt="JavaScript">
+                    <img src="images/node-logo.png" alt="Node js">
+                    <img src="images/express-logo.png" alt="Express js">
+                    <img src="images/html-logo.png" alt="HTML">
+                    <img src="images/css-logo.png" alt="CSS">
+                    <img src="images/tailwind-logo.png" alt="Tailwind">
+                    <img src="images/react-logo.png" alt="React">
+                    <img src="images/mongodb-logo.png" alt="MongoDB">
+                    <img src="images/git-logo.png" alt="git">
+                    <img src="images/photoshop-logo.png" alt="Adobe Photoshop">
+                    <img src="images/illustrator-logo.png" alt="Adobe Illustrator">
+                    <img src="images/figma-logo.png" alt="Figma">
+                </div>
+                <p>JavaScript · Node.js · Express.js · HTML5 · CSS3 · Tailwind · React · MongoDB · GIT · Adobe Photoshop · Adobe Illustrator · Figma</p>
+            </div>
         </div>
 
         <div class="news">
@@ -45,9 +76,43 @@
             <p>Period app has been the project created from scratch by Anna</p>
         </div>
 
-        <footer>
-            <p>Link to LinkedIn · Link to GitHub</p>
-        </footer>
+        <hr>
+
+        <div class="faqs">
+            <h3>Frequent asked questions (FAQs)</h3>
+            <h4>Who are you, and what's your stage name?</h4>
+        <p>Welcome to the main stage! I'm Anna, a Full-Stack Web Developer who creates digital experiences.</p>
+            <h4>Why a music festival-themed portfolio?</h4>
+        <p>Music festivals are full of energy, creativity and dynamism. I wanted to capture that same vibe in my portfolio.</p>
+        <h4>What can you do for my company?</h4>
+        <p>I have experience in the internal communications field so I can apply my knowledge to technologycal projects</p>
+        <h4>When can you start?</h4>
+        <p>ASAP</p>
+        </div>
+
+        <hr>
+
+        <form>
+            <h3>Can't wait to contact me?</h3>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <label for="message">Write your message here:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        </div>
     </section>
+
+    <footer>
+        <p>Link to LinkedIn · Link to GitHub</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
