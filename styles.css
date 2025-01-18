@@ -37,6 +37,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
 }
 
 #home {
@@ -93,6 +94,31 @@ header {
     100% {
         transform: translateX(-100%);
     }
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.news img {
+    height: 14rem;
+    width: 15rem;
+    object-fit: cover;
+}
+
+.period, .unsocial, .aventuralia {
+    border: 1px solid #3F3F3F;
+    border-radius: 0.5rem;
+    width: 18rem;
+    padding: 1.5rem;
 }
 
 footer {
