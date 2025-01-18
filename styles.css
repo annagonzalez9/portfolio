@@ -29,7 +29,6 @@ h2 {
 
 h3 {
     margin-bottom: 1rem;
-    /* add border radius */
 }
 
 header {
@@ -40,7 +39,11 @@ header {
     text-align: center;
 }
 
-#home {
+header a:hover, .project-navigation a:hover  {
+    text-decoration: underline;
+}
+
+#home, footer {
     text-align: center;
     margin-top: 2rem;
 }
@@ -54,23 +57,26 @@ header {
     color: #FFFFF2;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+    margin-top: 2rem;
 }
 
 .other-artists {
-    background-color: #befeac;
+    background-color: #a7ed93;
+}
+
+.other-artists h4 {
+    font-size: 1.5rem;
 }
 
 .partners {
     background-color: #e4e4e4;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
     width: 100%;
+    padding: 2rem 0;
 }
 
 .image-container {
     width: 100%;
     overflow: hidden;
-    margin: 2rem 0;
 }
 
 .image-row {
@@ -81,26 +87,34 @@ header {
 .image-row img {
     height: 6rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     object-fit: cover;
 }
 
 @keyframes slide {
     0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-50%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-70%);
     }
 }
 
-.projects {
+.news {
+    background-color: #3f3f3f;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.news h3 {
+    color:#FFFFF2;
+}
+
+.projects, .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 a {
@@ -112,18 +126,67 @@ a {
     height: 14rem;
     width: 15rem;
     object-fit: cover;
+    margin: 1rem 0;
 }
 
-.period, .unsocial, .aventuralia {
+.period, .unsocial, .aventuralia, .creativities {
+    border: 1px solid #3F3F3F;
+    border-radius: 0.5rem;
+    width: 18rem;
+    padding: 1.5rem;
+    background-color: #FFFFF2;
+}
+
+.period:hover, .unsocial:hover, .aventuralia:hover, .creativities:hover {
+    transform: scale(1.05);
+}
+
+.faqs h4 {
+    margin-top: 2rem;
+}
+
+footer .social-media {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer img {
+    height: 2rem;
+    margin: 0rem 0.4rem;
+}
+
+footer img:hover {
+    transform: scale(1.3);
+}
+
+.project-intro {
+    padding: 2rem;
+}
+
+.project-container {
+    margin-bottom: 2rem;
+}
+
+.project-container ul {
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.use-cases, .techs, .packages {
     border: 1px solid #3F3F3F;
     border-radius: 0.5rem;
     width: 18rem;
     padding: 1.5rem;
 }
 
-footer {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.project-picture img {
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+    margin-bottom: 2rem;
 }
+
+/* use of media-queries? */
