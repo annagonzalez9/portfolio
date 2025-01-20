@@ -8,6 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #FFFFF2;
     color: #3F3F3F;
+    padding-top: 0;
 }
 
 h1, h2, h3, h4 {
@@ -32,18 +33,33 @@ h3 {
 }
 
 header {
-    padding: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
+    background-color: #f6f678;
+    color: #3F3F3F;
+    padding: 0.75rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+header h3 {
+    margin-bottom: 0;
 }
 
 header a:hover, .project-navigation a:hover  {
     text-decoration: underline;
 }
 
-#home, footer {
+#home {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+footer {
     text-align: center;
     margin-top: 2rem;
 }
@@ -71,7 +87,7 @@ header a:hover, .project-navigation a:hover  {
 .partners {
     background-color: #e4e4e4;
     width: 100%;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 .image-container {
@@ -81,23 +97,76 @@ header a:hover, .project-navigation a:hover  {
 
 .image-row {
     display: flex;
-    animation: slide 15s linear infinite;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .image-row img {
-    height: 6rem;
+    height: 5rem;
+    width: 5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     object-fit: cover;
+    opacity: 0;
+    animation: fadeInOut 7s ease-in-out infinite;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0%);
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
     }
-    100% {
-        transform: translateX(-70%);
+    50% {
+        opacity: 1;
     }
+
+}
+
+.image-row img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.image-row img:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.image-row img:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.image-row img:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.image-row img:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.image-row img:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.image-row img:nth-child(7) {
+    animation-delay: 2.4s;
+}
+
+.image-row img:nth-child(8) {
+    animation-delay: 2.8s;
+}
+
+.image-row img:nth-child(9) {
+    animation-delay: 3.2s;
+}
+
+.image-row img:nth-child(10) {
+    animation-delay: 3.6s;
+}
+
+.image-row img:nth-child(11) {
+    animation-delay: 4s;
+}
+
+.image-row img:nth-child(12) {
+    animation-delay: 4.4s;
 }
 
 .news {
@@ -132,7 +201,8 @@ a {
 .period, .unsocial, .aventuralia, .creativities {
     border: 1px solid #3F3F3F;
     border-radius: 0.5rem;
-    width: 18rem;
+    width: auto;
+    max-width: 18rem;
     padding: 1.5rem;
     background-color: #FFFFF2;
 }
@@ -166,6 +236,7 @@ footer img:hover {
 }
 
 .project-container {
+    padding: 1rem;
     margin-bottom: 2rem;
 }
 
