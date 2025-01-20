@@ -198,7 +198,7 @@ a {
     margin: 1rem 0;
 }
 
-.period, .unsocial, .aventuralia, .creativities {
+.period, .calculator, .aventuralia, .creativities {
     border: 1px solid #3F3F3F;
     border-radius: 0.5rem;
     width: auto;
@@ -207,7 +207,7 @@ a {
     background-color: #FFFFF2;
 }
 
-.period:hover, .unsocial:hover, .aventuralia:hover, .creativities:hover {
+.period:hover, .calculator:hover, .aventuralia:hover, .creativities:hover {
     transform: scale(1.05);
 }
 
